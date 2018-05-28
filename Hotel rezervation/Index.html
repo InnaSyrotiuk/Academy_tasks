@@ -1,0 +1,282 @@
+<html>
+
+<head>
+    <style>
+        .left-side,
+        .right-side {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .left-side,
+        .block {
+            display: inline-block
+        }
+
+        .left-side {
+            width: 200px;
+        }
+
+        h3 {
+            margin: 0px;
+        }
+
+        .row {
+            padding-top: 10px
+        }
+
+        .day-view {
+            width: 40px;
+        }
+
+        .monht-view {
+            width: 200px
+        }
+
+        .year-view {
+            width: 80px
+        }
+
+        #room,
+        #adultCount {
+            width: 50px
+        }
+
+        .date {
+            width: 150px;
+        }
+
+        .button-section {
+            text-align: center
+        }
+
+        .dateBornView input,
+        .dateBornView select {
+            height: 25px;
+        }
+
+        .page-wrapper {
+            width: 500px;
+            margin: 0 auto;
+            border: 2px solid #ccc;
+            padding: 10px;
+        }
+        #Submit {
+            margin: 15px 0px 15px 0px;
+        }
+    </style>
+    <script src="jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="page-header">
+            <h1>Hotel rezervation form</h1>
+        </div>
+        <div class="rezervation-form">
+            <div class="row">
+                <div class="left-side">
+                    <h3>First name</h3>
+                </div>
+                <div class="right-side">
+                    <input type="text" id="name" name="name" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-side">
+                    <h3>Last name</h3>
+                </div>
+                <div class="right-side">
+                    <input type="text" id="surname" name="surname" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-side">
+                    <h3>Secret key</h3>
+                </div>
+                <div class="right-side">
+                    <input type="password" id="password" name="password" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-side">
+                    <h3>Sex</h3>
+                </div>
+                <div class="right-side">
+                    <input type="radio" name="gender" value="male" checked /> Male
+                    <input type="radio" name="gender" value="female" /> Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-side">
+                    <h3>Born date</h3>
+                </div>
+                <div class="right-side dateBornView">
+                    <input class="day-view" type="number" id="day" name="day" min="1" max="31" />
+                </div>
+                <div class="right-side dateBornView">
+                    <select name="month">
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="Desember">Desember</option>
+                    </select>
+                </div>
+                <div class="right-side dateBornView">
+                    <input class="year-view" type="number" id="year" name="year" min="1950" max="2018" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-side">
+                    <h3 class>Custom service</h3>
+                </div>
+                <div class="right-side">
+                    <input type="checkbox" id="breakfast" name="breakfast" /> Breakfast
+                    <br>
+                    <input type="checkbox" id="transfer" name="transfer" /> Skii transfer
+                    <br>
+                    <input type="checkbox" id="gym" name="gym" /> Gym and pool pass
+                    <br>
+                    <input type="checkbox" id="fridge" name="fridge" /> Fridge
+                    <br>
+                    <input type="checkbox" id="skiipass" name="skiipass" /> Skii pass
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-side">
+                    <h3 class>Available room</h3>
+                </div>
+                <div class="block">
+                    <select name="room" id="room">
+                        <option value="112">112</option>
+                        <option value="123">123</option>
+                        <option value="211">211</option>
+                    </select>
+                </div>
+                <div class="block">
+                    <h3>Adult count</h3>
+                </div>
+                <div class="block">
+                    <select name="adultCount" id="adultCount">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="Left-side">
+                    <h3>Reservation dates</h3>
+                </div>
+                <div class="block" class="date">
+                    <input type="date" id="dateCheckIn" name="dateCheckIn" />
+                </div>
+                <div class="block" class="date">
+                    <input type="date" id="dateCheckOut" name="dateCheckOut" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="Left-side">
+                    <h3>How you hered about us</h3>
+                </div>
+                <div class="right-side">
+                    <input type="radio" name="Suggested" value="Avdert" /> Avdert
+                    <br>
+                    <input type="radio" name="Suggested" value="Suggested" /> Friend suggested
+                    <br>
+                    <input type="radio" name="Suggested" value="Other" /> Other
+                    <br>
+                </div>
+            </div>
+            <div class="button-section">
+                <button id="Submit">Submit Rezervation</button>
+            </div>
+            <script>
+                $("#Submit").click(validatePage)
+
+                function validatePage() {
+                    var isvalid = true;
+                    var invalidMessage = "";
+
+
+                    var firstName = $("#name").val();
+                    if (firstName == "" || firstName == undefined) {
+                        isvalid = false;
+                        invalidMessage += "First name is empty. \n";
+                    }
+                    var lastName = $('#surname').val();
+                    if (lastName == "" || lastName == undefined) {
+                        isvalid = false;
+                        invalidMessage += "Last name is empty. \n";
+                    }
+                    var room = $("#room").val();
+                    if (room == "112" || room == "123" || room == "211") {
+
+                    } else {
+                        isvalid = false;
+                        invalidMessage += "Room number is empty. \n";
+                    }
+                    var adultCount = $("#adultCount").val();
+                    if (adultCount == "1" || adultCount == "2" || adultCount == "3" || adultCount == "4" ) {
+
+                    } else {
+                        isvalid = false;
+                        invalidMessage += "Count of adult is not correct";
+                    }
+                    var day = $("#day").val();
+                    if (day == "" || day == underfined) {
+                        isvalid = false;
+                        invalidMessage += "Born date is not correct";
+                    }
+                    var year = $("#year").val();
+                    if ( year == "" || year == Underfined) {
+                        isvalid = false;
+                        invalidMessage += "Born date is not correct";
+                    }
+
+                    var d1 = $("#dateCheckIn")[0].valueAsDate;
+                    var today = new Date();
+                    if ( dateCheckIn == null || dateCheckIn < today ) {
+                        isvalid = false;
+                        invalidMessage += "Empty and passed dates are not correct";   
+                    }
+
+                    var d2 = $("#dateCheckOut")[0].valueAsDate;
+                    if( d1>d2 || dateCheckOut == null) {
+                        isvalid = false;
+                        invalidMessage += "Empty and passed dates are not correct";
+                    }
+
+
+                    if (isvalid) {
+                        alert("Reservation confirmed")
+                    } else {
+                        alert(invalidMessage);
+                    }
+                    If (day )
+                }
+                var adultCount = $("#adultCount").val();
+                //$("#Submit").click(function(){
+                // validatePage();
+                //if(isvalid){
+                //    alert("Reservation confirmed")
+                //} else {
+                //    alert(invalidMessage);
+                //}
+                //}
+            </script>
+        </div>
+</body>
+
+</html>

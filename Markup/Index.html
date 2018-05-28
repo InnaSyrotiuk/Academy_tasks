@@ -1,0 +1,308 @@
+<html>
+
+<head>
+    <style>
+        .page-wrapper {
+            width: 1120px;
+            margin: 0 auto;
+        }
+
+        .header-up {
+            background: #444;
+            color: #fff;
+
+            height: 105px;
+        }
+
+        .project-name {
+            font-family: "Droid Sans", Arial, Helvetica, sans-serif;
+            font-weight: 550;
+            font-size: 48px;
+            padding: 10px 15px 15px 20px;
+        }
+
+        .header-down {
+            background: #222;
+            color: #fff;
+            height: 22px;
+            padding: 10px 5px 10px 20px;
+
+        }
+
+        header .left-side,
+        header .right-side {
+            display: inline-block;
+            width: 49%;
+
+        }
+
+        header .right-side {
+            text-align: right;
+        }
+
+        .main {
+            width: 60%;
+            vertical-align: top;
+        }
+
+        .side-bar {
+            width: 30%;
+            margin: 0 0 0 20px;
+            padding: 0;
+            font-family: "Droid Sans", Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            color: #161e21;
+        }
+
+        .main,
+        .side-bar {
+            display: inline-block
+        }
+
+        .heading {
+            width: 48%;
+            display: inline-block;
+            color: #444444;
+            font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+            font-size: 15px;
+            line-height: 21px;
+            padding: 0px 10px 0px 0px;
+            margin: 10px 0px 10px 0px;
+        }
+
+        .name {
+            font-family: "Droid Sans", Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            color: #161e21;
+            font-size: 23px;
+        }
+
+
+        .link:hover {
+            background: #666;
+            cursor: pointer;
+
+        }
+
+        .link {
+            color: #aaa;
+            font-size: 15px;
+            border: #444;
+            margin: 20px 0px 20px 0px;
+            padding: 5px 10px 5px 10px;
+            align-content: center;
+            border-radius: 3px;
+
+        }
+
+        .Search-button {
+            background: #5f5f5f;
+            color: #fff;
+            font-size: 15px;
+            margin: 20px 0px 20px 0px;
+            padding: 5px 10px 5px 10px;
+            align-content: center;
+            border-radius: 3px;
+        }
+
+        .Search-line {
+            width: 185px;
+            height: 25px;
+            margin: 0;
+        }
+
+        .Active {
+            background: #666;
+            color: #fff;
+            font-size: 15px;
+            margin: 50px 0px 20px 0px;
+            padding: 5px 10px 5px 10px;
+            border-radius: 3px;
+        }
+
+        .left-side,
+        .right-side {
+            height: 100%;
+        }
+
+        .box {
+            background: #f4f4f4;
+            border-radius: 5px;
+            border-style: groove;
+            height: 245px;
+            margin: 25px 0px 25px 25px;
+            padding: 15px;
+            font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+            color: #444444;
+            line-height: 21px;
+            font-size: 15px;
+        }
+
+        .read-more {
+            margin: 25px 5px 15px 0;
+        }
+
+        .arrow,
+        .text {
+            border: 1px solid #777;
+            border-radius: 2px;
+            color: #333 !important;
+            background: #cccccc;
+            cursor: pointer;
+            font: normal 1em/2em Arial, Helvetica;
+            margin: 0 0 0 0;
+            padding: 3px;
+            width: 10px;
+            font-size: 15px;
+
+        }
+
+        .text {
+            background: #eeeeee;
+        }
+
+        .Mcontain {
+            font-family: "Droid Sans", Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            margin: 10px 10px 25px 0px;
+            color: #161e21;
+        }
+
+        .content {
+            padding: 0%;
+            height: 850px;
+        }
+
+        .picture {
+            border-color: #aaa;
+            margin: 0px 10px 10px 0px;
+
+            border: 2px #eee solid;
+            border: 2px white solid;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+        }
+
+        .footer {
+            margin: 0;
+            background: #eee;
+            color: #444;
+            padding: 1.5em;
+        }
+
+        a {
+            color: #4d87c7;
+            background: transparent;
+            text-decoration: none;
+        }
+
+        .ul {
+            font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
+            font-size: 15px;
+            color: #444444;
+            line-height: 22px;
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header>
+            <div class="header-up">
+                <h1 class="project-name">Project Name</h1>
+            </div>
+            <div class="header-down">
+                <div class="left-side">
+                    <span class="link, Active">Active</span>
+                    <span class="link">Link</span>
+                    <span class="link">Link</span>
+                    <span class="link">Link</span>
+                    <span class="link">Link</span>
+                </div>
+                <div class="right-side">
+                    <input class="Search-line" type="text" placeholder="Search..." />
+                    <span class="Search-button">Search</span>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="main right-side box">
+                <h1 class="Mcontain">Main Content</h1>
+                <div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                    et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+                    sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+                    kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </div>
+                <div class="read-more">
+                    <span class="arrow">
+                        →
+                    </span>
+                    <span class="text">
+                        Read more
+                    </span>
+                </div>
+                <div class="heading">
+                    <h3 class="name">Heading</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                        ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                        ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                </div>
+                <div class="heading">
+                    <h3 class="name">Heading</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                        ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                        ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                </div>
+                <div class="heading">
+                    <h3 class="name">Heading</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                        ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                        ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                </div>
+                <div class="heading">
+                    <h3 class="name">Heading</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                        ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                        ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+                </div>
+            </div>
+            <div class="side-bar left-side">
+                <div>
+                    <h1>Sidebar</h1>
+                    <h2>Advertisment</h2>
+                    <img class="picture" src="http://dummyimage.com/128x128/cccccc/fff.png" alt="ads" class="float-left bordered">
+                    <img class="picture" src="http://dummyimage.com/128x128/cccccc/fff.png" alt="ads" class="float-left bordered">
+                    <img class="picture" src="http://dummyimage.com/128x128/cccccc/fff.png" alt="ads" class="float-left bordered">
+                    <img class="picture" src="http://dummyimage.com/128x128/cccccc/fff.png" alt="ads" class="float-left bordered">
+                    <img class="picture" src="http://dummyimage.com/128x128/cccccc/fff.png" alt="ads" class="float-left bordered">
+                    <img class="picture" src="http://dummyimage.com/128x128/cccccc/fff.png" alt="ads" class="float-left bordered">
+                </div>
+                <div>
+                    <h2>Widget</h2>
+                    <ul class="ul">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                        <li>Item 5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <span>© Company 2012 – Layout based on
+                <a class="a" href="http://www.yaml.de">YAML</a>
+            </span>
+        </footer>
+    </div>
+
+</body>
+
+</html>
