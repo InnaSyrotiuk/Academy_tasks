@@ -1,0 +1,7 @@
+D:\workspace\Academy tasks\CSV_to_XML_JSON\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\workspace\Academy tasks\CSV_to_XML_JSON\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\workspace\Academy tasks\CSV_to_XML_JSON\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\workspace\Academy tasks\CSV_to_XML_JSON\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+D:\workspace\Academy tasks\CSV_to_XML_JSON\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\workspace\Academy tasks\CSV_to_XML_JSON\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\workspace\Academy tasks\CSV_to_XML_JSON\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
