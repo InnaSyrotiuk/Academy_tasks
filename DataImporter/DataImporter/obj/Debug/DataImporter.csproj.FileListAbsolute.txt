@@ -1,0 +1,14 @@
+D:\workspace\GIT\Academy_tasks\DataImporter\DataImporter\bin\Debug\DataImporter.exe.config
+D:\workspace\GIT\Academy_tasks\DataImporter\DataImporter\bin\Debug\DataImporter.exe
+D:\workspace\GIT\Academy_tasks\DataImporter\DataImporter\bin\Debug\DataImporter.pdb
+D:\workspace\GIT\Academy_tasks\DataImporter\DataImporter\bin\Debug\EntityFramework.dll
+D:\workspace\GIT\Academy_tasks\DataImporter\DataImporter\bin\Debug\EntityFramework.SqlServer.dll
+D:\workspace\GIT\Academy_tasks\DataImporter\DataImporter\bin\Debug\EntityFramework.xml
+D:\workspace\GIT\Academy_tasks\DataImporter\DataImporter\bin\Debug\EntityFramework.SqlServer.xml
+D:\workspace\GIT\Academy_tasks\DataImporter\DataImporter\obj\Debug\DataImporter.csproj.CoreCompileInputs.cache
+D:\workspace\GIT\Academy_tasks\DataImporter\DataImporter\obj\Debug\DataImporter.exe
+D:\workspace\GIT\Academy_tasks\DataImporter\DataImporter\obj\Debug\DataImporter.pdb
+D:\workspace\GIT\Academy_tasks\DataImporter\DataImporter\obj\Debug\DataImporter.csprojResolveAssemblyReference.cache
+D:\workspace\GIT\Academy_tasks\DataImporter\DataImporter\bin\Debug\News.json
+D:\workspace\GIT\Academy_tasks\DataImporter\DataImporter\bin\Debug\Newtonsoft.Json.dll
+D:\workspace\GIT\Academy_tasks\DataImporter\DataImporter\bin\Debug\Newtonsoft.Json.xml
